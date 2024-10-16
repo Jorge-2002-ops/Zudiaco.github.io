@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Leo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Leo.jpeg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La creatividad es la inteligencia divirtiéndose".</h1>
+        <p1>23 de Julio | 23 de Agosto | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Leo, el cosmos te invita a abrir tu corazón y dejar que la magia del amor fluya libremente. Con Venus en Escorpio trino Neptuno en Piscis, las emociones se intensifican y te sientes más conectado con tu pareja. Es un día perfecto para compartir tus sueños y deseos más profundos. Si estás soltero, no te sorprendas si una nueva conexión surge de manera inesperada. Permítete ser vulnerable y auténtico, y verás cómo el amor se manifiesta de formas sorprendentes. Recuerda, el amor es un viaje, no un destino.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Leo, hoy es un día para destacar y mostrar tu lado más innovador. La energía creativa que te rodea te impulsa a pensar fuera de la caja y proponer ideas frescas. No tengas miedo de compartir tus visiones con tus colegas, ya que podrían abrir puertas a nuevas oportunidades. Tu liderazgo natural brilla y es un buen momento para asumir un papel más proactivo en proyectos importantes. Mantén una actitud abierta y receptiva a las colaboraciones, y verás cómo tus esfuerzos son reconocidos y valorados.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se beneficia de la energía creativa que te rodea. Aprovecha este impulso para explorar actividades que nutran tu espíritu, como el arte, la música o la meditación. Permítete un momento de tranquilidad para reconectar contigo mismo y escuchar lo que tu cuerpo y mente necesitan. Un paseo por la naturaleza o una sesión de yoga pueden ser revitalizantes. Recuerda que cuidar de ti mismo es esencial para mantener tu luminosidad natural. Hoy, más que nunca, tu bienestar está en tus manos, así que elige lo que te haga sentir pleno y equilibrado.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

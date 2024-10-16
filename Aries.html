@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Aries.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Aries.png" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>La frase del día es: "La verdadera fortaleza reside en la capacidad de ser auténtico".</h1>
+        <p1>21 de Marzo | 19 de Abril | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Aries, el cosmos te invita a sumergirte en las aguas profundas del amor. Con Venus en Escorpio formando un trino con Neptuno, es un día ideal para conectar emocionalmente con tu pareja. Si estás soltero, podrías sentir una atracción magnética hacia alguien nuevo. Aprovecha esta energía para abrir tu corazón y expresar tus sentimientos más sinceros. Recuerda que el amor es un viaje, no un destino, así que disfruta cada momento y deja que tu pasión te guíe.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Aries, tu dinamismo y energía estarán en su punto más alto. Es un día perfecto para liderar proyectos y tomar la iniciativa. Sin embargo, ten cuidado con la impulsividad; asegúrate de pensar bien antes de actuar. La creatividad estará de tu lado, así que no dudes en proponer ideas innovadoras. Recuerda que el trabajo en equipo puede llevarte más lejos, así que fomenta la colaboración y el intercambio de ideas con tus colegas.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se verá beneficiado por la energía calmante de Neptuno. Es un buen momento para practicar la meditación o el yoga, actividades que te ayudarán a canalizar tu energía y encontrar un equilibrio interno. No olvides cuidar de tu cuerpo con una alimentación saludable y suficiente descanso. Permítete un momento de tranquilidad para reconectar con tu esencia y escuchar lo que tu cuerpo y mente realmente necesitan.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Acuario.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Acuario.jpeg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera libertad es ser fiel a uno mismo".</h1>
+        <p1>20 de Enero | 19 de Febrero | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Acuario, el amor se presenta como un lienzo en blanco listo para ser pintado con los colores de tus emociones más profundas. La conexión entre Venus y Neptuno te invita a soñar despierto y a dejar que la magia del romance fluya naturalmente. Si estás en pareja, es un buen momento para compartir tus sueños y aspiraciones con tu ser querido, creando un espacio de intimidad y complicidad. Si estás soltero, mantén los ojos y el corazón abiertos, ya que podrías encontrar a alguien que comparta tu visión única del mundo.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Acuario, hoy es un día para dejar que tu creatividad brille. La influencia de Neptuno te anima a pensar fuera de lo convencional y a proponer ideas innovadoras que puedan sorprender a tus colegas y superiores. No temas desafiar el status quo, ya que tu perspectiva única puede abrir nuevas puertas y oportunidades. Sin embargo, asegúrate de comunicar tus ideas de manera clara y concisa para evitar malentendidos. Tu capacidad para ver más allá de lo evidente te permitirá destacar en cualquier proyecto que emprendas.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se ve favorecido por una energía suave y envolvente que te invita a cuidar de ti mismo con ternura. La influencia de Neptuno te sugiere que te tomes un tiempo para meditar o practicar alguna actividad espiritual que te conecte con tu ser interior. Escucha música relajante, da un paseo por la naturaleza o simplemente disfruta de un momento de tranquilidad en casa. Recuerda que cuidar de tu espíritu es tan importante como cuidar de tu cuerpo, y hoy es el día perfecto para nutrir ambos aspectos.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Capricornio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Capricornio.jpg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera sabiduría consiste en saber que no sabes nada".</h1>
+        <p1>22 de Diciemrbre | 19 de Enero | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Capricornio, el amor se presenta como un refugio cálido donde puedes ser tú mismo sin reservas. La influencia de Venus en Escorpio te invita a profundizar en tus emociones y a compartir tus sentimientos más íntimos con tu pareja. Si estás soltero, podrías sentir una conexión especial con alguien que comparte tus valores y ambiciones. No temas mostrar tu lado más vulnerable, ya que esto fortalecerá tus relaciones. Recuerda que el amor es un viaje de dos, donde la comprensión y el apoyo mutuo son las claves para construir un vínculo sólido y duradero.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el ámbito laboral, Capricornio, hoy es un día para brillar con tu capacidad de concentración y determinación. La influencia de Neptuno te ayuda a ver más allá de lo evidente, permitiéndote encontrar soluciones creativas a los desafíos que enfrentas. No dudes en compartir tus ideas innovadoras con tus colegas, ya que podrían abrir puertas a nuevas oportunidades. Mantén una actitud abierta y receptiva, y verás cómo tu esfuerzo y dedicación son reconocidos. Recuerda que el trabajo en equipo puede llevarte más lejos que el esfuerzo individual.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se ve beneficiado por una energía serena y equilibrada. La conexión de Venus con Neptuno te invita a dedicar tiempo a actividades que nutran tu alma, como la meditación o un paseo tranquilo en la naturaleza. Escucha a tu cuerpo y dale el descanso que necesita. Mantener un equilibrio entre tus responsabilidades y tus momentos de relajación te ayudará a mantener una mente clara y un espíritu en paz. No olvides que cuidar de ti mismo es esencial para poder dar lo mejor de ti en todas las áreas de tu vida.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

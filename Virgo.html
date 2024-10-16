@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Virgo.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Virgo.jpg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera sabiduría está en reconocer lo extraordinario en lo ordinario".</h1>
+        <p1>24 de Agosto | 22 de Septiembre | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Virgo, el cosmos te invita a abrir tu corazón y dejar que la magia del amor fluya. Con Venus en Escorpio en armonía con Neptuno, es un momento ideal para conectar a un nivel más profundo con tu pareja. Si estás soltero, podrías sentir una atracción magnética hacia alguien que comparte tus valores y sueños. No temas mostrar tu lado más vulnerable; la autenticidad es tu mejor aliada. Recuerda que el amor no siempre sigue un plan perfecto, y a veces, dejarse llevar puede llevarte a lugares maravillosos.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Virgo, tu atención al detalle será tu mayor fortaleza. Hoy, las estrellas te favorecen para destacar en proyectos que requieren precisión y análisis. La influencia de Neptuno te permite ver soluciones creativas a problemas complejos. No dudes en compartir tus ideas con tus colegas; tu perspectiva única puede ser la clave para el éxito del equipo. Mantén la mente abierta a nuevas formas de hacer las cosas y no temas salir de tu zona de confort. La innovación es tu aliada en este día lleno de potencial.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se verá beneficiado por una conexión más profunda con tus emociones. La influencia de Neptuno te invita a explorar prácticas espirituales como la meditación o el yoga, que pueden ayudarte a encontrar un equilibrio interno. Dedica tiempo a actividades que nutran tu alma y te permitan desconectar del estrés diario. Un paseo por la naturaleza o un baño relajante pueden ser justo lo que necesitas para recargar energías. Recuerda que cuidar de ti mismo es esencial para poder cuidar de los demás.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

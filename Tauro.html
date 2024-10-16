@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tauro.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Tauro.jpg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La calma es el poder de la mente en su máxima expresión"</h1>
+        <p1>20 de Abril | 20 de Mayo | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Tauro, el amor se presenta como un refugio cálido y seguro. Venus en Escorpio trino a Neptuno en Piscis te invita a sumergirte en las aguas profundas de tus emociones. Es un día perfecto para expresar tus sentimientos más sinceros a tu pareja o a esa persona especial. Si estás soltero, podrías sentir una conexión casi mágica con alguien nuevo. Aprovecha este momento para dejarte llevar por la intuición y permitir que el amor fluya sin restricciones. Recuerda que a veces, las palabras más simples son las que llegan al corazón.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Tauro, hoy es un día para mostrar tu lado más creativo y empático. La influencia de Neptuno te ayuda a ver más allá de lo evidente, permitiéndote encontrar soluciones innovadoras a problemas antiguos. No temas compartir tus ideas con tus colegas, ya que podrían ser la chispa que encienda un proyecto exitoso. Mantén una actitud abierta y receptiva a las opiniones de los demás. Recuerda que el trabajo en equipo puede llevarte más lejos que cualquier esfuerzo individual. Hoy, tu perseverancia y dedicación serán tus mejores aliados.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se ve favorecido por una energía calmante que te envuelve, gracias a la influencia de Neptuno. Es un día ideal para dedicar tiempo a actividades que nutran tu espíritu y cuerpo, como el yoga o la meditación. Permítete disfrutar de un baño relajante o un paseo por la naturaleza. Estos momentos de tranquilidad te ayudarán a recargar energías y a mantener un equilibrio emocional. Recuerda que cuidar de ti mismo es esencial para enfrentar los desafíos con serenidad y fortaleza.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Libra.cssS">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Libra.css" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera armonía se encuentra cuando escuchamos con el corazón y actuamos con amor".</h1>
+        <p1>23 de Septiembre | 22 de Octubre | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, querido Libra, el cosmos te invita a abrir tu corazón y dejar que la magia del amor fluya libremente. Con Venus en Escorpio en trino con Neptuno, tus relaciones se ven envueltas en un halo de romanticismo y comprensión profunda. Es un día ideal para expresar tus sentimientos más sinceros y fortalecer los lazos con tu pareja. Si estás soltero, podrías encontrarte con alguien que despierte tu interés de manera inesperada. Recuerda que el amor verdadero se basa en la autenticidad y la empatía, así que sé tú mismo y deja que las conexiones se desarrollen de manera natural.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Libra, hoy es un día para brillar en equipo. La energía de Venus en Escorpio te dota de una intuición aguda que puedes utilizar para resolver problemas de manera creativa. Es un buen momento para colaborar y compartir tus ideas con tus colegas, ya que tu capacidad para mediar y encontrar soluciones será muy valorada. No temas asumir un papel de liderazgo si la situación lo requiere. Recuerda que el éxito compartido es el más gratificante, y que tu habilidad para crear un ambiente armonioso puede llevar a grandes logros colectivos.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se beneficia de una conexión especial entre tu mente y tu espíritu. Aprovecha la energía de Neptuno para practicar la meditación o el yoga, actividades que te ayudarán a encontrar el equilibrio interno que tanto buscas. Escucha a tu cuerpo y dale el descanso que necesita; una caminata tranquila al aire libre puede ser revitalizante. Recuerda que cuidar de ti mismo es esencial para mantener la armonía en tu vida. Permítete momentos de tranquilidad y reflexión, y verás cómo tu energía se renueva y te sientes más en paz contigo mismo.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

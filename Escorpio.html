@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Escorpio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Escorpio.jpeg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera magia ocurre cuando sigues el camino de tu corazón".</h1>
+        <p1>23 de Octubre | 21 de Noviembre | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Escorpio, tu corazón está en sintonía con las vibraciones del universo. Venus en Escorpio trino Neptuno en Piscis te invita a abrirte a nuevas experiencias amorosas. Si estás en una relación, es el momento perfecto para compartir tus sueños más profundos con tu pareja. La conexión emocional será intensa y enriquecedora. Para los solteros, el amor puede surgir en los lugares más inesperados. Mantén los ojos y el corazón abiertos, porque una mirada o una sonrisa pueden encender una chispa mágica. Recuerda, el amor es un viaje, no un destino.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Escorpio, hoy es un día para dejar que tu creatividad brille. La influencia de Venus en Escorpio trino Neptuno en Piscis te dota de una visión única que puede transformar proyectos ordinarios en extraordinarios. No tengas miedo de compartir tus ideas, incluso las más audaces. Tus colegas apreciarán tu perspectiva innovadora y tu capacidad para ver más allá de lo evidente. Si enfrentas desafíos, confía en tu intuición para encontrar soluciones creativas. Recuerda, tu pasión y determinación son tus mejores aliados en el camino hacia el éxito.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se beneficia de una energía cósmica que te invita a la introspección y al autocuidado. Dedica tiempo a meditar o practicar yoga, permitiendo que tu mente se calme y se centre. La conexión entre Venus y Neptuno te ayuda a sintonizar con tus necesidades emocionales más profundas. Escucha a tu cuerpo y dale lo que necesita, ya sea descanso, ejercicio o una dieta equilibrada. Aprovecha para disfrutar de un baño relajante o una caminata en la naturaleza. Recuerda, cuidar de ti mismo es el primer paso hacia el bienestar integral.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

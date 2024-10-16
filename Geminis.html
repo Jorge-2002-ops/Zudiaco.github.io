@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Geminis.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Geminis.jpg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera sabiduría está en reconocer la propia ignorancia"</h1>
+        <p1>21 de Mayo | 20 de Junio | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Géminis, el amor se presenta como un campo fértil para la comunicación y la comprensión. Venus en Escorpio trina a Neptuno en Piscis, lo que sugiere un momento propicio para profundizar en tus relaciones. Si tienes pareja, es un buen día para compartir tus sueños y anhelos, creando un espacio de intimidad y conexión espiritual. Para los solteros, este tránsito puede traer encuentros mágicos y conversaciones que fluyen con facilidad. Aprovecha este día para expresar tus sentimientos con honestidad y apertura, dejando que la empatía guíe tus interacciones amorosas.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Géminis, hoy es un día para brillar con tu elocuencia y adaptabilidad. La influencia de Venus y Neptuno favorece la colaboración y la creatividad, por lo que es un buen momento para participar en proyectos de equipo o proponer ideas innovadoras. Tu habilidad para comunicarte con claridad y empatía será clave para resolver cualquier conflicto o malentendido que pueda surgir. No temas expresar tus pensamientos y ser un líder en tu entorno laboral. Recuerda que tu capacidad para adaptarte a diferentes situaciones es una de tus mayores fortalezas.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se verá beneficiado por una conexión más profunda con tus emociones y deseos internos. La influencia de Neptuno te invita a explorar prácticas espirituales o creativas que te ayuden a centrarte y encontrar paz interior. Considera dedicar tiempo a la meditación, la escritura o cualquier actividad que te permita expresarte libremente. Este es un día para nutrir tu alma y escuchar lo que realmente necesitas para sentirte equilibrado y en armonía. Recuerda que cuidar de tu bienestar emocional es tan importante como atender a tu salud física.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

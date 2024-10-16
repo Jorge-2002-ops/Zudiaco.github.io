@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Estilo Pornhub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    margin: 0;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+span{
+  background-color: orange;
+  color: #000;
+  padding: 6px;
+  border-radius: 5px;
+  
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+.body {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 50px;
+    margin: 0;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image-box {
+    background-color: #ccc  ;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+.image-box img {
+    width: 400px;
+    height: 100px;
+}
+
+.video-card {
+    background: #2a2a2a;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-card img {
+    width: 100%;
+    height: auto;
+}
+
+.video-info {
+    padding: 10px;
+}
+
+.video-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.video-info p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.container1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button-image {
+    cursor: pointer;
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.button-image:hover {
+    transform: scale(1.05);
+}
+
+.divider {
+    border-top: 2px solid #7e7e7e; /* Línea divisoria */
+    margin-top: 20px; /* Espacio antes de la línea */
+} 
+
+.p1 {
+   color: #7e7e7e;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+}
+</style>
+
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div> 
+        </header>
+
+        <div class="body">
+            <div class="container">
+                <form id="subscriptionForm">
+                    <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
+                    <button type="submit" id="subscribeBtn">Suscríbete</button>
+                </form>
+            </div>
+            </div>
+
+    <div class="container1">
+        <center><div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div></center>
+    </div>
+    <main>
+
+        <div class="video-card">
+            <a href="Aries.html">
+            <img src="Aries.png" alt="Video 1" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 1</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Tauro.html">
+            <img src="Tauro.jpg" alt="Video 2" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 2</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Geminis.html">
+            <img src="Geminis.jpg" alt="Video 3" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 3</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Cancer.html">
+            <img src="Cancer.jpeg" alt="Video 1" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 1</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Leo.html">
+            <img src="Leo.jpeg" alt="Video 2" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 2</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Virgo.html">
+            <img src="Virgo.jpg" alt="Video 3" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 3</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Libra.html">
+            <img src="Libra.jpg" alt="Video 1" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 1</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Escorpio.html">
+            <img src="Escorpio.jpeg" alt="Video 2" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 2</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Sagitario.html">
+            <img src="Sagitario.jpeg" alt="Video 3" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 3</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Sagitario.html">
+            <img src="Capricornio.jpg" alt="Video 1" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 1</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Sagitario.html">
+            <img src="Acuario.jpeg" alt="Video 2" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 2</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <a href="Sagitario.html">
+            <img src="Picis.jpg" alt="Video 3" class="button-image">
+            <div class="video-info">
+                <h3>Título del Video 3</h3>
+                <p>Descripción breve del video.</p>
+            </a>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer>
+
+        <div class="divider">
+        </div>
+    
+        <center><p1>Zodiaco te ofrece una informacion clara de cada una de los doce signos zodiacales, donde podras encontrar el tuyo y conocerte mas a fondo, desde tu travesia en el amor, oportunidades laborales y tu salud fisica, garatizamos su satisfacion.</p1></center>
+    
+        <div class="divider">
+        </div>
+    
+        <p1>&copy; 2024 Zodiaco. Todos los derechos reservados.</p1>
+    </footer>
+
+
+    <script>
+        document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+    
+    const emailInput = document.getElementById('email').value;
+    
+    // Verifica si el correo electrónico contiene un "@"
+    if (emailInput.includes('@')) {
+        alert('¡Correo válido! Suscripción realizada.');
+    } else {
+        alert('Por favor, ingresa un correo electrónico válido.');
+    }
+});
+    </script>
+</body>
+</html>

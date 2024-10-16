@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Sagitario.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Sagitario.jpeg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La vida es un viaje, no un destino. Disfruta cada paso del camino".</h1>
+        <p1>22 de Noviembre | 21 de Diciembre | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Sagitario, el amor se presenta como un viaje en sí mismo. Venus en Escorpio te invita a explorar las profundidades de tus emociones y a conectar con tu pareja de manera más intensa y espiritual. Si estás soltero, podrías sentir una atracción magnética hacia alguien que comparte tus sueños y visiones. Permítete ser vulnerable y expresar tus sentimientos sin miedo. Recuerda que el amor verdadero no teme a la verdad. Aprovecha este día para fortalecer lazos y abrir tu corazón a nuevas experiencias amorosas.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Sagitario, hoy es un día para dejar volar tu imaginación. La influencia de Neptuno potencia tu creatividad, permitiéndote encontrar soluciones innovadoras a problemas antiguos. No temas compartir tus ideas, incluso si parecen poco convencionales. Tu enfoque original puede ser justo lo que tu equipo necesita. Sin embargo, asegúrate de mantener un equilibrio entre la creatividad y la practicidad. Organiza tus tareas para evitar distracciones y asegúrate de cumplir con tus responsabilidades. Tu espontaneidad es tu mayor fortaleza hoy.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se verá beneficiado por la energía fluida de Neptuno en Piscis. Es un buen momento para practicar la meditación o el yoga, actividades que te conecten con tu ser interior y te ayuden a encontrar la paz mental. Escucha a tu cuerpo y dale lo que necesita, ya sea descanso, ejercicio o una dieta equilibrada. Recuerda que tu salud es un reflejo de tu estado emocional, así que mantén pensamientos positivos y rodéate de personas que te inspiren y te llenen de energía positiva.</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>

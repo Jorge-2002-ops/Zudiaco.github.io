@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Cancer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Zodi <span>Aco</span></div>
+    </header>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Signos de zodiaco.jpeg" alt="Descripción de la imagen 1">
+        </div>
+    </div>
+
+    <div class="container">
+        <center><img src="Cancer.jpeg" alt="Descripción de la imagen" width="300"></center>
+    </div>
+
+    <div class="text-left">
+        <h1>"La verdadera fuerza reside en la vulnerabilidad."</h1>
+        <p1>21 de Junio | 22 de Julio | Oroscops</p1>
+    </div>
+
+    <button class="button like" onclick="handleReaction('like')">👍 Me Gusta</button>
+    <button class="button dislike" onclick="handleReaction('dislike')">👎 No Me Gusta</button>
+    <button class="button love" onclick="handleReaction('love')">❤️ Me Encanta</button>
+    <div id="result" style="margin-top: 20px;">       
+    </div>
+    <div class="divider">
+    </div>
+    
+    <strong><h2>AMOR</h2></strong>
+    <center><p2>Hoy, Cáncer, el cosmos te invita a abrir tu corazón y dejar que la empatía fluya en tus relaciones amorosas. Venus en Escorpio trino Neptuno en Piscis crea una atmósfera mágica para el amor, donde la comprensión y la conexión emocional son profundas. Si estás en pareja, es un buen momento para compartir tus sueños y anhelos más íntimos. Si estás soltero, podrías sentirte atraído por alguien que comparte tus valores y sensibilidad. Recuerda, el amor verdadero se nutre de la honestidad y la vulnerabilidad.</p2></center>
+    <strong><h2>TRABAJO</h2></strong>
+    <center><p2>En el trabajo, Cáncer, hoy es un día para dejar que tu creatividad brille. La influencia de Neptuno puede inspirarte a encontrar soluciones innovadoras a los desafíos que enfrentas. No tengas miedo de pensar fuera de lo convencional y de compartir tus ideas con tus colegas. La empatía también será clave en el ámbito laboral, ya que te permitirá entender mejor las necesidades de tu equipo y colaborar de manera más efectiva. Recuerda, el trabajo en equipo es el camino hacia el éxito.</p2></center>
+    <strong><h2>SALUD</h2></strong>
+    <center><p2>Tu bienestar hoy se verá beneficiado por la energía calmante de Neptuno en Piscis. Es un día ideal para practicar actividades que te conecten con tu interior, como la meditación o el yoga. Permítete momentos de introspección y escucha lo que tu intuición tiene que decirte. La música suave o un paseo por la naturaleza pueden ayudarte a encontrar el equilibrio emocional que necesitas. Recuerda que cuidar de tu mundo interior es tan importante como cuidar de tu cuerpo físico. Mi horóscopo de hoy Cáncer: para empezar con ... © https://mi.astrocentro.com/horoscopo/diario/cancer</p2></center>
+
+    <script>
+        function handleReaction(reaction) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `Has reaccionado con: ${reaction}`;
+        }
+    </script>
+</body>
+</html>
